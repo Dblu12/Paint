@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.david.paint.MainActivity">
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="#ff0000"
+        android:layout_marginLeft="20dp"
+        android:onClick="setRed" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton"
+        android:src="#040404"
+        android:onClick="setBlack" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton3"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:src="#0008ff"
+        android:onClick="setBlue" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton4"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:src="#118701"
+        android:onClick="setGreen" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton5"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton4"
+        android:layout_toEndOf="@+id/imageButton4"
+        android:src="@drawable/suma"
+        android:onClick="setOther" />
+
+    <com.example.david.paint.Paint
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageButton6" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/eraser"
+        android:onClick="eraseAll" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton7"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton6"
+        android:layout_toEndOf="@+id/imageButton6"
+        android:src="@drawable/pincel"
+        android:onClick="drawLine" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton8"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton7"
+        android:layout_toEndOf="@+id/imageButton7"
+        android:src="@drawable/recta"
+        android:onClick="drawStraight" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton9"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton8"
+        android:layout_toEndOf="@+id/imageButton8"
+        android:src="@drawable/guardar"
+        android:onClick="save" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton10"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton9"
+        android:layout_toEndOf="@+id/imageButton9"
+        android:src="@drawable/circulo"
+        android:onClick="drawCircle" />
+
+</RelativeLayout>
